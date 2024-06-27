@@ -32,6 +32,21 @@ defmodule CustomerAdmin.Users do
     |> Repo.all()
   end
 
+  def create_mock_users(x) do
+    companies = CustomerAdmin.Companies.get_list_of_companies_id()
+
+    for _ <- 1..x do
+      %User{
+        full_name: Faker.Person.name(),
+        email: Faker.Internet.email(),
+        company_id: Enum.random(companies),
+        category: Faker.Commerce.department()
+      }
+      |> Repo.insert!()
+    end
+  end
+
+
   defp apply_show_deleted(query, %{show_deleted: true}), do: query
 
   defp apply_show_deleted(query, %{show_deleted: false}),
