@@ -27,7 +27,13 @@
 .list-container {
   @apply p-4 bg-gray-100 rounded-lg;
 }
-
+.app-title {
+  @apply text-2xl text-red-500 font-bold tracking-tight;
+  font-family: "SpaceGrotesk", sans-serif;
+  color: white;
+  letter-spacing: 0.1rem; 
+  font-weight: 500
+}
 .list-item {
   @apply p-2 bg-gray-100 text-red-800 rounded-lg tracking-tight font-bold;
   margin-bottom: 0.3rem;
