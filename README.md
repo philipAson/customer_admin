@@ -7,6 +7,12 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+To add mock data on your DB:
+
+  * Start of with open a new terminal and run `iex -S mix`.
+  * Then Create a set number of companies with `CustomerAdmin.Companies.generate_mock_companies(x)`, `x` is the amount of companies you would like to generate.
+  * Now you are ready to Create some users with `CustomerAdmin.Users.create_mock_users(x)`.
+
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
