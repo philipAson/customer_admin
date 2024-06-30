@@ -1,3 +1,5 @@
+![collage-whalecum-small](https://github.com/philipAson/customer_admin/assets/113354376/1838080d-9f24-4754-8132-e8e3ea9a5141)
+
 # CustomerAdmin
 
 * CustomerAdmin requires that you have a Postgres and Elixir installed on your machine.
