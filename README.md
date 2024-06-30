@@ -1,5 +1,8 @@
 # CustomerAdmin
 
+* CustomerAdmin requires that you have a Postgres and Elixir installed on your machine.
+
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
